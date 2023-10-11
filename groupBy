@@ -1,0 +1,27 @@
+1)
+SELECT meal, COUNT(id)
+FROM orders
+GROUP BY meal;
+
+2)
+SELECT SUM(price)
+FROM meal
+WHERE price > 15;
+
+3)
+SELECT meal, COUNT(*)
+FROM meal
+WHERE calories >500
+GROUP BY meal;
+
+4)
+SELECT SUM(price)
+FROM meal
+WHERE LOWER(name) LIKE '%s%';
+
+5)
+SELECT meal, COUNT(id)
+FROM orders
+WHERE order_date < '2023-10-03 17:21:00'
+GROUP BY meal;
+
